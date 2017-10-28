@@ -153,7 +153,8 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; 
-
+filter: grayscale(100%);
+   
   -moz-box-shadow: 100px 200px 300px rgba(0,0,0,.5);
   -webkit-box-shadow: 100px 200px 300px rgba(0,0,0,.5);
   box-shadow: 100px 200px 300px rgba(0,0,0,.5)}
