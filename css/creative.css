@@ -155,9 +155,10 @@ header.masthead {
   background-size: cover; 
 
    
-  -moz-box-shadow: 100px 200px 300px rgba(0,0,0,.5);
+  /**-moz-box-shadow: 100px 200px 300px rgba(0,0,0,.5);
   -webkit-box-shadow: 100px 200px 300px rgba(0,0,0,.5);
-  box-shadow: 100px 200px 300px rgba(0,0,0,.5)}
+  box-shadow: 100px 200px 300px rgba(0,0,0,.5)**/
+                                                }
 
   header.masthead .header-content {
     position: relative;
