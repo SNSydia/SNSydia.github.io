@@ -14,19 +14,18 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #008c8c; }
+  border-color: #F05F40; }
 
 hr.light {
   border-color: white; }
 
-
 a {
-  color: #008c8c;
+  color: #F05F40;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:focus, a:hover {
-    color: #00cccc; }
+    color: #f05f40; }
 
 h1,
 h2,
@@ -42,7 +41,7 @@ p {
   margin-bottom: 20px; }
 
 .bg-primary {
-  background-color: #008c8c !important; }
+  background-color: #F05F40 !important; }
 
 .bg-dark {
   color: white;
@@ -88,10 +87,10 @@ body {
   #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #008c8c;
+    color: #F05F40;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #008c8c; }
+      color: #f05f40; }
   #mainNav .navbar-toggle {
     font-size: 12px;
     font-weight: 700;
@@ -105,10 +104,10 @@ body {
     color: #222222; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-      color: #008c8c; }
+      color: #F05F40; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #008c8c !important;
+      color: #F05F40 !important;
       background-color: transparent; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
@@ -132,15 +131,15 @@ body {
         background-color: white; }
         #mainNav.navbar-shrink .navbar-brand {
           font-size: 16px;
-          color: #008c8c; }
+          color: #F05F40; }
           #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-            color: #008c8c; }
+            color: #f05f40; }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
           color: #222222; }
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-            color: #00cccc; } }
+            color: #F05F40; } }
 
 header.masthead {
   position: relative;
@@ -261,7 +260,7 @@ header.masthead {
     margin: 0 auto 20px; }
 
 .text-primary {
-  color: #008c8c !important; }
+  color: #F05F40 !important; }
 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -306,27 +305,27 @@ header.masthead {
 
 .btn-primary {
   color: white;
-  border-color: #008c8c;
-  background-color: #008c8c; }
+  border-color: #F05F40;
+  background-color: #F05F40; }
   .btn-primary.focus, .btn-primary:focus {
     color: white;
-    border-color: #00cccc;
-    background-color: #00cccc; }
+    border-color: #a4270d;
+    background-color: #eb3812; }
   .btn-primary:hover {
     color: white;
-    border-color: #00cccc;
-    background-color: #00cccc; }
+    border-color: #e13612;
+    background-color: #eb3812; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
-    border-color: #00cccc;
-    background-color: #00cccc; }
+    border-color: #e13612;
+    background-color: #eb3812; }
     .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
     .open > .btn-primary.dropdown-toggle.focus,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle:hover {
       color: white;
-      border-color: #00cccc;
+      border-color: #a4270d;
       background-color: #c93110; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
@@ -335,10 +334,10 @@ header.masthead {
   fieldset[disabled] .btn-primary.focus,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary:hover {
-    border-color: #008c8c;
-    background-color: #008c8c; }
+    border-color: #F05F40;
+    background-color: #F05F40; }
   .btn-primary .badge {
-    color: #008c8c;
+    color: #F05F40;
     background-color: white; }
 
 .btn {
@@ -350,8 +349,3 @@ header.masthead {
 
 .btn-xl {
   padding: 15px 30px; }
-
-.vl {
-  border-left: 6px solid green;
-  height: 500px;
-}
