@@ -1,1 +1,0 @@
-import{r}from"./three-BODC-sfW.js";import{u as a,ba as i}from"./index-CC0GZa7q.js";function c(o){const s=a(e=>e.load);return r.useEffect(()=>{s()},[s]),a(e=>e.jobs.find(b=>b.id===o))}function f(){const o=a(t=>t.load);r.useEffect(()=>{o()},[o]);const s=a(t=>t.jobs);return i(s)}export{c as a,f as u};
