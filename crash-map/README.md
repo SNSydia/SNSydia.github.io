@@ -1,46 +1,54 @@
 # Crash Map
 
-**Status: beta**
+**Version 0.22.0 · public debut 3 November 2026**
 
 Live app: https://snsydia.github.io/crash-map/
 
-A mobile-first app for mountain bikers to log crashes and where on the body they got hurt. It shows which body parts take the most damage and which protective gear may be worth it.
+A mobile-first app for mountain bikers to log crashes and where on the body they got hurt. It shows which body parts take the most damage, where and how you crash, and which protective gear may be worth it. It works fully offline.
 
 ## Pages
 
-- **Map**: 2D front and back body drawings, or a 3D body. Injuries show as a type-coloured glow, or as a heat map with symbols.
-- **Stats**: totals, most-hit areas, how you crash, injury types, where you crash by trail, and injuries per month.
-- **Log**: every crash with its injuries. Edit or delete entries here.
+- **Map**: 2D front and back body drawings, or a 3D body you can turn and zoom. Injuries show as a type-coloured glow, or (Heat) as symbols over a glow of how often and how badly each spot is hit.
+- **Stats**: totals, most-hit body parts, where you crash by trail, how you crash, injury types, and a month-by-month chart.
+- **Log**: every crash with its injuries, newest first. Open, edit or delete crashes here.
 
 ## Logging a crash
 
 1. Pick an injury type: Abrasion, Cut, Deep tissue injury, Sprain/strain, Dislocation, Fracture, Concussion, or Other.
-2. Set the severity from 1 to 5.
-3. Tap the body where you were hurt.
+2. Set the severity from 1 (Scuff) to 5 (Severe).
+3. Tap the body where you were hurt. Undo, or Erase, takes it back.
 
-Injuries are grouped into crashes. Each crash has a date, trail, what happened, and notes.
+The crash's details sit beside the injuries (swipe on a phone): where you were riding, the trail (picked from the list for Revelstoke and Kicking Horse, or typed), what happened, the date and a note. **Finish and save** ends the crash; your next tap starts a new one.
 
 ## Filters
 
-Filter by time range, trail, depth (skin, bone, or brain), injury type, or individual crashes.
+Filter by time range, depth (skin to bone), injury type, individual crashes, or trail.
 
-## Demo mode
+## Guided tour and demo
 
-Open demo mode from the settings (gear) menu. It loads sample crashes for a fictional rider on real trails at Revelstoke Mountain Resort and Kicking Horse Mountain Resort. Nothing is saved.
+- **Take the tour** (welcome card or the gear menu): a hands-on walk through every feature with a sample rider.
+- **Try the demo** (gear menu): a season of sample crashes on real trails at Revelstoke Mountain Resort and Kicking Horse Mountain Resort.
 
-## Data
+Nothing done in either is saved; your own log comes back when you leave.
 
-Data is stored only in your own browser (localStorage). There is no account and no server. Data is not synced between devices, and clearing browser data erases it.
+## Data and privacy
+
+Your log is stored only in this browser (IndexedDB). There is no account, no server, no ads and no tracking, and the app makes no request to any other site. Data is not synced between devices, and clearing the browser's data erases it. Location is optional: one reading suggests the bike park you're at; only the park is remembered, never coordinates.
+
+## Offline
+
+A service worker (`sw.js`) keeps every file of the app on the device after the first visit, the 3D body and fonts included, so it opens and works with no signal. On a weak signal it opens the stored copy after 3 seconds. A new version is picked up on the next visit.
 
 ## Files
 
-- `index.html`: the app
-- `body-mesh.json`: 3D body model
-- `tex-v000.jpg`, `tex-v045.jpg`, `tex-v090.jpg`, `tex-v135.jpg`, `tex-v180.jpg`: 3D body skin textures
-- `img/`: 2D body drawings. Licence: see `img/LICENSE-body-images.txt`.
+- `index.html`: the app page; `assets/`: its scripts and styles (file names carry a content hash)
+- `sw.js`: the service worker (offline use)
+- `body.glb`: the 3D body; `tex-v000.jpg` … `tex-v180.jpg`: its skin textures
+- `img/`: 2D body drawings. Licence: `img/LICENSE-body-images.txt`
+- `fonts/OFL.txt`: the licence of the Barlow fonts (the font files are in `assets/`)
 
-three.js 0.160.0 and fonts load from public CDNs.
+Everything is self-contained: no CDN, no external fonts.
 
 ## Updating
 
-Replace the files in this folder and commit. GitHub Pages republishes in a minute or two.
+Built from https://github.com/snsydia/crash-map (`npm run build` in `app/`). Replace this folder's files (keeping this README) with the contents of `app/dist/` and commit; GitHub Pages republishes in a minute or two.
