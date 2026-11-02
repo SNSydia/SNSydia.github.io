@@ -1,6 +1,6 @@
 # Crash Map
 
-**Version 0.22.2 · private beta from 3 November 2026**
+**Version 0.23.0 · private beta from 3 November 2026**
 
 Live app: https://snsydia.github.io/crash-map/
 
@@ -27,6 +27,7 @@ Filter by time range, depth (skin to bone), injury type, individual crashes, or 
 ## Guided tour and demo
 
 - **Take the tour** (welcome card or the gear menu): a hands-on walk through every feature with a sample rider.
+- **Watch it (1 min)** (welcome card or the gear menu): the same tour playing itself, in under a minute.
 - **Try the demo** (gear menu): a season of sample crashes on real trails at Revelstoke Mountain Resort and Kicking Horse Mountain Resort.
 
 Nothing done in either is saved; your own log comes back when you leave.
