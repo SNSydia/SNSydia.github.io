@@ -1,6 +1,6 @@
 # Crash Map
 
-**Version 0.25.8 · private beta from 3 November 2026**
+**Version 0.25.9 · private beta from 3 November 2026**
 
 Live app: https://snsydia.github.io/crash-map/
 
