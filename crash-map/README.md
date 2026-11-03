@@ -1,6 +1,6 @@
 # Crash Map
 
-**Version 0.24.0 · private beta from 3 November 2026**
+**Version 0.25.0 · private beta from 3 November 2026**
 
 Live app: https://snsydia.github.io/crash-map/
 
@@ -18,7 +18,7 @@ A mobile-first app for mountain bikers to log crashes and where on the body they
 2. Set the severity from 1 (Scuff) to 5 (Severe).
 3. Tap the body where you were hurt. Undo, or Erase, takes it back.
 
-The crash's details sit beside the injuries (swipe on a phone): where you were riding, the trail (picked from the list for Revelstoke and Kicking Horse, or typed), what happened, the date and a note. **Finish and save** ends the crash; your next tap starts a new one.
+The crash's details sit beside the injuries (swipe on a phone): where you were riding, the trail (picked from the list for Revelstoke, Kicking Horse and Spider Mountain, or typed), what happened, the date and a note. **Finish and save** ends the crash; your next tap starts a new one.
 
 ## Filters
 
@@ -26,9 +26,9 @@ Filter by time range, depth (skin to bone), injury type, individual crashes, or 
 
 ## Guided tour and demo
 
-- **Take the tour** (welcome card or the gear menu): a hands-on walk through every feature with a sample rider.
-- **Watch it (70 s)** (welcome card or the gear menu): the same tour playing itself, in about 70 seconds.
-- **Try the demo** (gear menu): a season of sample crashes on real trails at Revelstoke Mountain Resort and Kicking Horse Mountain Resort.
+- **Take an interactive tour** (welcome card or the gear menu): a hands-on walk through every feature with a sample rider.
+- **Watch it instead** (welcome card or the gear menu): the same tour playing itself, in about a minute and a half; drag its progress bar to jump.
+- **Load a Sample Rider** (welcome card or the gear menu): a season of sample crashes on real trails at Revelstoke Mountain Resort and Kicking Horse Mountain Resort.
 
 Nothing done in either is saved; your own log comes back when you leave.
 
