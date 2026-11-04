@@ -1,6 +1,6 @@
 # Crash Map
 
-**Version 0.25.10 · private beta from 3 November 2026**
+**Version 0.25.11 · private beta from 3 November 2026**
 
 Live app: https://snsydia.github.io/crash-map/
 
@@ -18,7 +18,7 @@ A mobile-first app for mountain bikers to log crashes and where on the body they
 2. Set the severity from 1 (Scuff) to 5 (Severe).
 3. Tap the body where you were hurt. Undo, or Erase, takes it back.
 
-The crash's details sit beside the injuries (swipe on a phone): where you were riding, the trail (picked from the list for Revelstoke, Kicking Horse and Spider Mountain, or typed), what happened, the date and a note. **Finish and save** ends the crash; your next tap starts a new one.
+The crash's details sit beside the injuries (swipe on a phone): where you were riding, the trail (picked from the list for Revelstoke, Kicking Horse, Spider Mountain and the Edmonton Bike Park, or typed), what happened, the date and a note. **Finish and save** ends the crash; your next tap starts a new one.
 
 ## Filters
 
