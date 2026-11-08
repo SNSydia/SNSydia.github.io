@@ -1,7 +1,7 @@
 // Next Line service worker: makes the whole app usable offline. vite.config.ts (precacheServiceWorker) copies this
 // file to dist/sw.js and fills in PRECACHE (every built file with a content hash) and VERSION (a hash of the list).
-const VERSION = "1f13fc8ab54f";
-const PRECACHE = ["assets/barlow-condensed-latin-500-BgYH2mbd.woff2","assets/barlow-condensed-latin-600-DepVgxBB.woff2","assets/barlow-condensed-latin-700-v1xN8_Wq.woff2","assets/barlow-latin-400-qiz4-Cze.woff2","assets/barlow-latin-500-BPAOfeC8.woff2","assets/barlow-latin-600-DILqtrty.woff2","assets/index-C9nbB9H-.js","assets/index-CYn8DEt7.css","./","logo.svg"];
+const VERSION = "861de6707b01";
+const PRECACHE = ["assets/barlow-condensed-latin-500-BgYH2mbd.woff2","assets/barlow-condensed-latin-600-DepVgxBB.woff2","assets/barlow-condensed-latin-700-v1xN8_Wq.woff2","assets/barlow-latin-400-qiz4-Cze.woff2","assets/barlow-latin-500-BPAOfeC8.woff2","assets/barlow-latin-600-DILqtrty.woff2","assets/index-CJrNzQSe.js","assets/index-P3ygnHq8.css","./","logo.svg"];
 const CACHE = "nextline-" + VERSION;
 const scope = self.registration.scope;
 const urlOf = (path) => new URL(path, scope).href;

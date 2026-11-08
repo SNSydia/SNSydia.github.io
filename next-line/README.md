@@ -1,6 +1,6 @@
 # Next Line
 
-**Version 0.2.1 · 8 November 2026**
+**Version 0.2.2 · 8 November 2026**
 
 Live app: https://snsydia.github.io/next-line/
 
