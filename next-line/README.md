@@ -1,6 +1,6 @@
 # Next Line
 
-**Version 0.2.2 · 8 November 2026**
+**Version 0.3.0 · 8 November 2026**
 
 Live app: https://snsydia.github.io/next-line/
 
@@ -12,9 +12,11 @@ A mobile-first progression app for mountain bikers: what can I ride, and what's 
 - **Park**: every trail at the park as a ticklist. Open a trail to log runs, see today's runs and your success rate by day, make it a goal, or log a crash in Crash Map (it fills in the park and trail, and brings you back).
 - **Progress**: the trail ladder in your style (what you've cleaned, and what's ready next), goals with progress, and an optional skills checklist (Tried, Got it, Consistent).
 - **Log**: one card per riding day: runs, clean runs, conditions, your note and that day's Crash Map crashes.
-- **Me**: your rider (always in view), profile with bike brand and model and home town, the theme (Trail Dusk, Morning, Blossom) and export or import of your data.
+- **Me**: your rider (always in view), profile with bike brand and model and home town, the theme (Trail Dusk, Morning, Blossom, Matcha) and export or import of your data.
 
 At the end of the day, **Reflect in 30 s** records the trails you rode, anything new, and the conditions.
+
+New here? Next Line opens with a sample rider, **Maxxis McRockshox**, so every screen has something to show. Press **Start fresh**, or log your first run, and it's gone.
 
 ## Your data
 
