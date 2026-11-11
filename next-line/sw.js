@@ -1,7 +1,7 @@
 // Next Line service worker: makes the whole app usable offline. vite.config.ts (precacheServiceWorker) copies this
 // file to dist/sw.js and fills in PRECACHE (every built file with a content hash) and VERSION (a hash of the list).
-const VERSION = "9574ad77101f";
-const PRECACHE = ["assets/barlow-condensed-latin-500-BgYH2mbd.woff2","assets/barlow-condensed-latin-600-DepVgxBB.woff2","assets/barlow-condensed-latin-700-v1xN8_Wq.woff2","assets/barlow-latin-400-qiz4-Cze.woff2","assets/barlow-latin-500-BPAOfeC8.woff2","assets/barlow-latin-600-DILqtrty.woff2","assets/index-B0MIBHrJ.css","assets/index-B9sU8uIs.js","./","logo.svg"];
+const VERSION = "ecf37bda1234";
+const PRECACHE = ["assets/barlow-condensed-latin-500-BgYH2mbd.woff2","assets/barlow-condensed-latin-600-DepVgxBB.woff2","assets/barlow-condensed-latin-700-v1xN8_Wq.woff2","assets/barlow-latin-400-qiz4-Cze.woff2","assets/barlow-latin-500-BPAOfeC8.woff2","assets/barlow-latin-600-DILqtrty.woff2","assets/main-BC4z8Jq8.js","assets/main-D8nnk-ig.css","assets/map-demo-CZuQRNVt.js","assets/map-demo-DBTbxJD1.css","assets/src-Dp9sQ9-0.js","./","logo.svg","map-demo.html"];
 const CACHE = "nextline-" + VERSION;
 const scope = self.registration.scope;
 const urlOf = (path) => new URL(path, scope).href;
@@ -29,8 +29,11 @@ self.addEventListener("activate", (event) => {
 // cache is not refreshed from this response: a new deploy brings a new sw.js, whose install caches the new page
 // together with its new scripts, so the cached page never points at files the cache lacks.
 const PAGE_WAIT_MS = 3000;
+// The demo map (map-demo.html, a test page) is its own page; every other navigation opens the app.
+const pageFor = (request) =>
+  new URL(request.url).pathname.endsWith("/map-demo.html") ? urlOf("map-demo.html") : urlOf("./");
 async function page(request) {
-  const cached = await caches.match(urlOf("./"), { cacheName: CACHE });
+  const cached = await caches.match(pageFor(request), { cacheName: CACHE });
   if (!cached) return fetch(request);
   const controller = new AbortController();
   const giveUp = setTimeout(() => controller.abort(), PAGE_WAIT_MS);

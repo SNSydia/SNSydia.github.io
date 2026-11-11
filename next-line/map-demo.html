@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RMR Trail Graph</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+  <script type="module" crossorigin src="./assets/map-demo-CZuQRNVt.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/src-Dp9sQ9-0.js">
+  <link rel="stylesheet" crossorigin href="./assets/map-demo-DBTbxJD1.css">
+</head>
+<body>
+<main>
+<div class="map" id="mapWrap"><div class="tools" id="tools"><button class="btn" id="undo">Undo</button><button class="btn" id="clear">Clear run</button></div><svg id="map" role="img" aria-label="Revelstoke trail graph"></svg></div>
+<aside>
+<h1>Revelstoke: our own trail graph</h1>
+<div class="note">Test only, from the vector paths of RMR's 2025 bike map. Gondola: on and off at every station, up and down. Hollow orange rings are crossings: a possible switch nobody has confirmed. Suggestions never switch there; chains may, with a warning.</div>
+<h2>Tap a trail to</h2><div class="seg" id="mode"><button data-v="explore">See it</button><button data-v="chain">Chain it</button></div>
+<h2>Colour by</h2><div class="seg" id="colour"><button data-v="grade">Grade</button><button data-v="rider">This rider</button></div>
+<h2>Background</h2><div class="seg" id="background"><button data-v="none">none</button><button data-v="osm">OpenStreetMap</button></div>
+<h2>Where am I</h2><div class="seg" id="gps"><button id="showMe" aria-pressed="false">Show me</button></div><div class="note" id="gpsNote"></div>
+<h2>Rider is comfortable on</h2><div class="seg" id="comfort"></div>
+<h2>Trails this rider has proven</h2><div class="ticks" id="ticks"></div>
+<div class="legend" id="legend"></div>
+<div id="panel" class="card"></div>
+</aside></main>
+</body>
+</html>
