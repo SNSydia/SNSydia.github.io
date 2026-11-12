@@ -1,7 +1,7 @@
 // Next Line service worker: makes the whole app usable offline. vite.config.ts (precacheServiceWorker) copies this
 // file to dist/sw.js and fills in PRECACHE (every built file with a content hash) and VERSION (a hash of the list).
-const VERSION = "ecf37bda1234";
-const PRECACHE = ["assets/barlow-condensed-latin-500-BgYH2mbd.woff2","assets/barlow-condensed-latin-600-DepVgxBB.woff2","assets/barlow-condensed-latin-700-v1xN8_Wq.woff2","assets/barlow-latin-400-qiz4-Cze.woff2","assets/barlow-latin-500-BPAOfeC8.woff2","assets/barlow-latin-600-DILqtrty.woff2","assets/main-BC4z8Jq8.js","assets/main-D8nnk-ig.css","assets/map-demo-CZuQRNVt.js","assets/map-demo-DBTbxJD1.css","assets/src-Dp9sQ9-0.js","./","logo.svg","map-demo.html"];
+const VERSION = "43b2aeab02e6";
+const PRECACHE = ["assets/barlow-condensed-latin-500-BgYH2mbd.woff2","assets/barlow-condensed-latin-600-DepVgxBB.woff2","assets/barlow-condensed-latin-700-v1xN8_Wq.woff2","assets/barlow-latin-400-qiz4-Cze.woff2","assets/barlow-latin-500-BPAOfeC8.woff2","assets/barlow-latin-600-DILqtrty.woff2","assets/main-BmxbLpsj.css","assets/main-CHwZDKO-.js","assets/map-demo-CEPvmZ43.js","assets/map-demo-Cl9KxQcN.css","assets/tiles-WrdmcEVW.js","./","logo.svg","map-demo.html"];
 const CACHE = "nextline-" + VERSION;
 const scope = self.registration.scope;
 const urlOf = (path) => new URL(path, scope).href;
